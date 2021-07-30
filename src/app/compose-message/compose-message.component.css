@@ -1,0 +1,10 @@
+.compose-message{
+    position: absolute;
+    z-index: 1;
+    margin: 200px 500px;
+    background-color: inherit;
+    box-shadow: 10px 0px 5px rgb(36, 35, 35);
+    border: 1px solid white;
+    width: 400px;
+    padding-left: 300px;
+}

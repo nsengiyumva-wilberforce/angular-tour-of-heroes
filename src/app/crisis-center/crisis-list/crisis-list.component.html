@@ -1,0 +1,14 @@
+<div>
+    <label for="new-crisis">New Crisis: </label>
+    <input id="new-crisis" #crisisName />
+    <button class="add-crisis" (click)="add(crisisName.value); crisisName.value = ''">Add Crisis</button>
+</div>
+<ul class="crises">
+    <li *ngFor="let crisis of crises" [class.selected] = "crisis.id===selectedId">
+        <a [routerLink] = "['/crisis-center', crisis.id]">
+        <span class="badge">{{crisis.id}}</span>{{crisis.name}}
+       </a>
+    </li>
+</ul>
+<router-outlet></router-outlet>
+
