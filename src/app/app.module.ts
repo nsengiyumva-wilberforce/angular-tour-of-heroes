@@ -18,6 +18,7 @@ import { HeroesModule } from './heroes/heroes.module';
 import { ComposeMessageComponent } from './compose-message/compose-message.component';
 import { LoginComponent } from './auth/login/login.component';
 import { AuthModule } from './auth/auth/auth.module';
+import { HeroFormComponent } from './hero-form/hero-form.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { AuthModule } from './auth/auth/auth.module';
     HeroSearchComponent,
     PageNotFoundComponent,
     ComposeMessageComponent,
-    LoginComponent
+    LoginComponent,
+    HeroFormComponent
   ],
   imports: [
     BrowserModule,

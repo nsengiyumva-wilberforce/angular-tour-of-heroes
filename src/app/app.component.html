@@ -1,10 +1,11 @@
 <h1>{{title}}</h1>
 <nav>
     <a routerLink = "/crisis-center" routerLinkActive = "active">Crisis Center</a>
+    <a routerLink = "/admin" routerLinkActive = "active">Admin</a>
     <a [routerLink] = "[{outlets: {popup: 'compose'}}]" routerLinkActive = "active">Contact</a>
     <a routerLink = "/dashboard" routerLinkActive = "active">Dashboard</a>
     <a routerLink = "/heroes" routerLinkActive = "active">Heroes</a>
-    <a routerLink = "/admin" routerLinkActive = "active">Admin</a>
+    <a routerLink="/hero-form" routerLinkActive = "active">Hero Form</a>
 </nav>
 <router-outlet name = "popup"></router-outlet>
 <div [@routeAnimation] = "getAnimationData(routerOutlet)">
